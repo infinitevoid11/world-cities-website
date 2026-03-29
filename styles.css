@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #F2F6FA;
+}
+header{
+    background-color: #0F172B;
+    height: 70px;
+    color: white; 
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    cursor: pointer;
+}
+header > div > img{
+    height: 50px;
+    width: 50px;
+}
+header > nav {
+    width: 300px;
+    margin-right: 150px;
+}
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+header > div{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header > nav > ul > li > a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    margin: 0 5px;
+    transition: all 300ms;
+}
+header > nav > ul > li > a:hover{
+    background-color: #314158;
+}
+#active{
+    background-color: #203b61;
+}
+.drop-ul{
+    position: absolute;
+    display: none;
+}
+.drop-li:hover .drop-ul{
+    display: block;
+}
+.drop-a{
+    display: block;
+    padding: 5px 20px;
+    margin: 0 5px;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.drop-a:hover{
+    background-color: #314158;
+    color: white;
+}
+.title-section{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-info{
+    width: 650px;
+    text-align: center;
+}
+.title{
+    margin-bottom:20px;
+    font-size: 36px;
+    color: #0F172B;
+}
+.title-des{
+    color: #7E7A79;
+}
+.card-section{
+    width: 80%;
+    margin: 50px auto;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 400ms ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card-title{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: #252C3F;
+    font-weight: 500;
+}
+.card-des{
+    margin-left: 15px;
+    width: 400px;
+    color: #7E7A79;
+    font-size: 13px;
+}
+.card-bottom{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin-left: 15px;
+}
+.card-bottom-img{
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+.card-bottom-des{
+    font-size: 10px;
+    float: left;
+    color: #7E7A79;
+}
+.info-section{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.info-card{
+    width: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    transition: all 400ms ease;
+}
+.info-card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.info-img{
+    width: 50px;
+    height: 50px;
+}
+.info-title{
+    font-weight: 500;
+    color: #3A4A5F;
+}
+.info-des{
+    font-size: 12px;
+    color: #7E7A79;
+}
+.table-section{
+    width: 80%;
+    margin: 50px auto;
+    background: #f8f9fb;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.table-section h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1a1a1a;
+}
+.city-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+.city-table thead{
+    background: #eef1f5;
+}
+.city-table th{
+    text-align: left;
+    padding: 15px;
+    color: #333;
+    font-weight: 600;
+}
+.city-table td{
+    padding: 15px;
+    color: #444;
+}
+.city-table tr{
+    border-bottom: 1px solid #e0e0e0;
+}
+.city-table tbody tr:hover{
+    background: #f1f5ff;
+}
+.footer{
+    background: #1e2a3a;
+    color: white;
+    padding: 40px 0;
+}
+.footer-container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.footer-column h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-column a{
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.footer-column a:hover{
+    color: white;
+}
+.video{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    border-radius: 20px;
+}
